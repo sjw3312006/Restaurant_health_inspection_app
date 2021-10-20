@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.FirstActivity.MainActivity">
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton" />
+
+    <!-- From here to -->
+
+    <EditText
+        android:id="@+id/queryDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/searchTwo"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_button"
+        android:text="@string/search"
+        />
+
+    <!-- To here is code I added in -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_popFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRESS TO POP FRAG" />
+
+        <Button
+            android:id="@+id/btn_scramble_fav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRESS TO SCRAMBLE FAV" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/testMap"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="testMap" />
+
+    <Button
+        android:id="@+id/testSecond_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="goToSecond" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/printCSV_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOG ITR2CSV" />
+
+        <Button
+            android:id="@+id/btn_scramble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Scramble MOD" />
+
+        <Button
+            android:id="@+id/deleter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE CSV" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_printFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRESS TO PRINT FAV" />
+
+        <Button
+            android:id="@+id/btn_fav_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PRESS TO DELETE FAV" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_timetravel20"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="PRESS TO TIME TRAVEL THE CSV" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/restaurantsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Resturant_inspection_app_Group_15"

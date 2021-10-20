@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/inspectionImage"
+            android:layout_width="75dp"
+            android:layout_height="75dp" />
+
+        <TextView
+            android:id="@+id/inspectionTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@id/inspectionImage"
+            android:layout_toRightOf="@id/inspectionImage"
+            android:fontFamily="casual"
+            android:text="@string/inspectiontime"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/inspectionDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inspectionTime"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toEndOf="@+id/critTxt"
+            android:layout_toRightOf="@id/inspectionImage"
+            android:fontFamily="casual"
+            android:text="@string/inspectiondescription"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/critTxt"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inspectionTime"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/inspectionImage"
+            android:text="@string/critical" />
+
+        <TextView
+            android:id="@+id/nonCritTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/critTxt"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/inspectionImage"
+            android:text="@string/noncritical" />
+
+        <TextView
+            android:id="@+id/inspectionDescription2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inspectionDescription"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="-8dp"
+            android:layout_toEndOf="@+id/nonCritTxt"
+            android:fontFamily="casual"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
